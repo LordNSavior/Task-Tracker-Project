@@ -23,6 +23,7 @@ function handleSubmission(event) {
 
     if (taskName == "" || taskDeadline == "") {
         alert('Task name and deadline are required!')
+        return;
     }
 
     tasks.push({ name: taskName, description: taskDescription, deadline: taskDeadline })
